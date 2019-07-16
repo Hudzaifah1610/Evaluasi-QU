@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background: rgb(11, 40, 136);
+    height:50px;
+    line-height: 50px;
+    animation: nav_muncul 1s;
+    text-align: center;
+    width: 100%;  
+}
+
+nav :hover {
+    color:red;
+}
+
+a :active {
+    color:yellow;
+}
+
+a :hover{
+    background-color:blue;
+}
+
+a{
+    padding: 50px;
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left:50px;
+    margin-right: 25px;
+}
+
+.sumber {
+    color:blue;
+}
+
+.gambar {
+    margin-left:265px;
+}
+
+.animasi{
+    text-shadow: 1px 1px 2px black,0 0 25px blue,0 0 5px darkblue;
+    color: goldenrod;
+    font-size: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: muncul 5s;
+}
+
+@keyframes muncul {
+    from{
+        /* transform:rotate(200deg); */
+         /* transform:scale(0); */
+         transform:translateX(100px);
+         opacity: 0;
+    }
+
+    to {
+        /* transform:rotate(0); */
+         /* transform: scale(1); */
+         transform:translateX(0px);
+         opacity: 1;
+    }
+}
+
+@keyframes nav_muncul {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.awalan {
+    margin-left: 260px;
+    color: black;
+    font-style: italic;
+}
+
+p {
+    margin-left:260px;
+    color: rgb(43, 32, 32);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+
+.text {
+    margin-right: 250px;
+}
+
+li a {
+    color: red;
+    margin-left: 270px;
+}
+
