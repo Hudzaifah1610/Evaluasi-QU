@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://1.bp.blogspot.com/-RNlE0A5OwPY/W7OT9xYEqhI/AAAAAAAAAz0/I8yN1t2j-YwkPmcN7LZF5uWUY_uOtSrtwCLcBGAs/s1600/background%2Bkeren%2B7.jpg)
+}
+.container{
+    background: rgb(150, 157, 161);
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 7px;
+    box-shadow: 8px 8px 5px rgb(160, 101, 101);
+}
+img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+table {
+    width: 100%;
+}
+form input {
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+    padding-top: 20px;
+    margin-top: 20px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid black;
+    background: white;
+}
+/* form input text {
+    font-size: 100px;
+} */
+table td input {
+    width: 100%;
+    background: rgb(188, 197, 188);
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid rgb(19, 21, 24);
+    border-radius: 5px;
+}
+table td input:hover{
+    /* border: rgb(207, 41, 236); */
+    background: rgb(222, 243, 36)
+}
+#one {
+    background: rgb(241, 255, 38);
+}
+#one:hover{
+    background: rgb(161, 165, 159)
+}

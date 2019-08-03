@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evaluasi Calculator</title>
+    <link rel="stylesheet" href="Evaluasi3.css">
+</head>
+<body>
+    <!-- <h1>HDZ-CALCULAT000rr</h1> -->
+
+    <div class="container">
+        <img src="https://1.bp.blogspot.com/-Uw30dBS9Pik/UQfS5oUbIdI/AAAAAAAAAOA/HCeT9DdCrOA/s1600/animasi-bergerak-naruto-gif.gif" alt="">
+        <form name="formAngka">
+            <input type="text" name="isiText" autocomplete="off">
+        </form>
+        <table>
+            <tr>
+                <td><input type="button" value="C" onclick="hapusSemua()"></td>
+                <td colspan="2"><input type="button" value="<=" onclick="hapus()"></td>
+                <td><input type="button" id="one" value="+" onclick="ins('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="ins('1')"></td>
+                <td><input type="button" value="2" onclick="ins('2')"></td>
+                <td><input type="button" value="3" onclick="ins('3')"></td>
+                <td><input type="button" id="one" value="-" onclick="ins('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="ins('4')"></td>
+                <td><input type="button" value="5" onclick="ins('5')"></td>
+                <td><input type="button" value="6" onclick="ins('6')"></td>
+                <td><input type="button" id="one" value="x" onclick="ins('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="ins('7')"></td>
+                <td><input type="button" value="8" onclick="ins('8')"></td>
+                <td><input type="button" value="9" onclick="ins('9')"></td>
+                <td><input type="button" id="one" value=":" onclick="ins('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." onclick="ins('.')"></td>
+                <td><input type="button" value="0" onclick="ins('0')"></td>
+                <td colspan="2"><input type="button" value="=" onclick="smDengan()"></td>
+            </tr>
+        </table>
+    </div>
+
+<script>
+let keluar = document.formAngka.isiText;
+function ins(num){
+    keluar.value += num;
+}
+function smDengan(){
+    keluar.value = eval(keluar.value)
+}
+function hapus(){
+    keluar.value = keluar.value.substr(0,keluar.value.length -1);
+}
+function hapusSemua(){
+    keluar.value=" ";
+}
+</script>  
+</body>
+</html>
